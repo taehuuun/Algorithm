@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -19,6 +20,8 @@ int main()
     {
         cin >> arr[i];
     }
+
+    sort(arr,arr+len);
 
     cout << "Enter the value you want to find : " << endl;
     cin >> find;
