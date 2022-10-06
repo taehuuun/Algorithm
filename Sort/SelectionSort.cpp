@@ -8,12 +8,12 @@ int main()
 {
     int len;
 
-    cout << "Enter the size of the array : " << endl;
+    cout << "Enter the size of the array : ";
     cin >> len;
 
     int list[len];
 
-    cout << "Fill in the array values : " << endl;
+    cout << "Fill in the array values : ";
 
     for (int i = 0; i < len; i++)
     {
@@ -21,6 +21,11 @@ int main()
     }
 
     SelectionSort(list, len);
+
+    for (int i = 0; i < len; i++)
+    {
+        cout << list[i] << " ";
+    }
 
     return 0;
 }
@@ -46,11 +51,5 @@ void SelectionSort(int list[], int len)
                 list[j] = temp;
             }
         }
-        for (int i = 0; i < len; i++)
-        {
-            cout << list[i] << " ";
-        }
-        cout << "Min : " << min << endl;
     }
-
 }
